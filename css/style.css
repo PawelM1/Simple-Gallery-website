@@ -1,0 +1,105 @@
+body {
+     background-color: #212121;
+}
+ .gallery-title {
+     font-size: 36px;
+     color: #42B32F;
+     text-align: center;
+     font-weight: 500;
+     margin-bottom: 70px;
+}
+ .filter-button {
+     font-size: 20px;
+     border: 1px solid #FFFFFF;
+     border-radius: 5px;
+     text-align: center;
+     color: #FFFFFF;
+     background-color: #42B32F;
+     margin-bottom: 30px;
+}
+ .filter-button:hover {
+     font-size: 20px;
+     border: 1px solid rgb(177, 41, 41);
+     border-radius: 5px;
+     text-align: center;
+     color: #ffffff;
+     background-color: rgb(47, 179, 124);
+}
+ .img-responsive {
+     max-height: 280px;
+     max-width: 320px;
+     width: 320px;
+     height: 280px;
+     border-radius: 8px;
+     filter: grayscale(0%);
+     transition: transform 1s ease-in-out ;
+     overflow: hidden;
+}
+ .img-responsive:hover {
+     filter: grayscale(0%);
+     transform: scale(1.06);
+}
+ .icon {
+     padding-top: 5px;
+     background-color: #42B32F;
+     font-size: 46px;
+}
+ .icon > * {
+     color: #FFFFFF;
+}
+ .icon > a:link {
+     text-decoration: none;
+}
+ .icon > a .fb:hover {
+     color: rgb(13, 13, 226);
+}
+ .icon > a .insta:hover {
+     color: rgb(250, 171, 25);
+}
+ .icon > a .twitter:hover {
+     color: #009cec;
+}
+ .icon > a .github:hover {
+     color: rgb(0, 0, 0);
+}
+ .createdby {
+     font-size: 12px;
+     padding: 10px;
+     background-color: rgb(39, 170, 16);
+     color: #FFFFFF;
+}
+
+/*color for this "rectangle" under photos. */
+ :root {
+     --gd2-color1: #29e2e9;
+     --gd2-color2: #20e230;
+     --gd3-color1: #f12711;
+     --gd3-color2: #f5af19;
+}
+ .gallery_product {
+     margin-bottom: 25px;
+}
+ .gallery_product::before {
+     content: '';
+     position:absolute;
+     top:0;
+     bottom:0;
+     left:0;
+     right:0;
+     width: 340px;
+     height: 280px;
+     min-height: 280px;
+     min-width: 340px;
+     margin:auto;
+     background-color: #fff;
+     border-radius: 20px;
+     z-index: -1;
+     transform: skew(1.5deg, 1.5deg);
+}
+ .gallery_product:nth-child(2n+1)::before {
+     background: linear-gradient(315deg, var(--gd2-color1), var(--gd2-color2));
+}
+ .gallery_product:nth-child(2n+2)::before {
+     background: linear-gradient(315deg, var(--gd3-color1), var(--gd3-color2));
+}
+ 

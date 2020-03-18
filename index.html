@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="framework_library/jquery-3.4.1.min.js"></script>
+    <link href="framework_library/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="framework_library/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/social_media_icon/css/fontello.css">
+    <script src="js/bookmark_menu.js"></script>
+    <script src="js/fill_gallery.js"></script>
+    <link href="js/lightbox/css/lightbox.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Simple Gallery</h1>
+            </div>
+
+            <div align="center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="motorization ">Motorization</button>
+                <button class="btn btn-default filter-button" data-filter="nature">Nature</button>
+                <button class="btn btn-default filter-button" data-filter="sport">Sport</button>
+                <button class="btn btn-default filter-button" data-filter="culinary">Culinary</button>
+            </div>
+
+            <br />
+            <div align="center">
+                <div class="gallery_content"></div>
+                <!--div filled by fill_gallery.js-->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row text-center">
+            <div class="icon">
+                <a href="https://pl-pl.facebook.com/"> <i class="icon-facebook-official fb"></i></a>
+                <a href="https://instagram.com/"> <i class="icon-instagram insta"></i> </a>
+                <a href="https://twitter.com/"> <i class="icon-twitter twitter"></i> </a>
+                <a href="https://github.com/"> <i class="icon-github-circled github"></i> </a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="createdby">Website created as a project from the subject of Internet Technologies.</div>
+        </div>
+    </footer>
+
+    <script src="js/lightbox/js/lightbox.min.js" rel="stylesheet"></script>
+    <script>
+        lightbox.option({
+            'resizeDuration': 500,
+            'wrapAround': true,
+            'showImageNumberLabel': true;
+        })
+    </script>
+</body>
+
+</html>
